@@ -22,6 +22,7 @@ void loop(){
   // read the mux
   mux.update();
   for(uint8_t i=0;i<MUX_TOTAL;i++){
+    // "i" specifies which mux to read
     uint16_t data = mux.readPins(i);
     // compare the mux states to the last saved states
     if(data != pinStates[i]){

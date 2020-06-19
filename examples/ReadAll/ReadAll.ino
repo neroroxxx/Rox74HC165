@@ -22,7 +22,14 @@ void loop(){
   // read the mux
   mux.update();
   for(uint8_t i=0;i<MUX_TOTAL;i++){
+    // read all pins from the mux specified by "i"
     uint8_t data = mux.read(i);
+    // to read a single pin from a specific mux you would do:
+    // bool data = mux.read(muxIndex, muxPin);
+    // where muxIndex is the mux you are reading from
+    // and muxPin is the pin of that mux you want to read
+
+
     // compare the mux states to the last saved states
     if(data != pinStates[i]){
       // if they change update the last states and print their values

@@ -25,6 +25,7 @@ void setup(){
 void loop(){
   // read the mux
   mux.update();
+  // read a single pin specified by MUX_PIN
   bool data = mux.readPin(MUX_PIN);
   if(data != pinState){
     pinState = data;
