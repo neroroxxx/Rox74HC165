@@ -1,5 +1,5 @@
-#ifndef Rox74HX165_h
-#define Rox74HX165_h
+#ifndef Rox74HC165_h
+#define Rox74HC165_h
 
 #include <Arduino.h>
 
