@@ -1,3 +1,16 @@
+/*
+  https://www.RoxXxtar.com/bmc
+  See license.txt
+
+  Library to read one or more 74HC165 multiplexers
+
+  This library will read each pin of the mux and store it in RAM
+
+  It was designed and tested for PJRC Teensy boards only.
+
+  Use at your own risk.
+*/
+
 #ifndef Rox74HC165_h
 #define Rox74HC165_h
 
